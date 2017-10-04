@@ -1,4 +1,3 @@
-
 var NavMenu = React.createClass({
 	render: function() {
 		return (
@@ -14,7 +13,7 @@ var NavMenu = React.createClass({
 	}
 });
 
-var AddressItem = React.createClass({
+var InfoItem = React.createClass({
 	propTypes: {
 		id: React.PropTypes.number,
 		name: React.PropTypes.string.isRequired,
@@ -30,13 +29,13 @@ var AddressItem = React.createClass({
 		);
 	}
 });
-var AddressItems = React.createClass({
+var InfoItems = React.createClass({
 	propTypes: {
 		items: React.PropTypes.array.isRequired
 	},
 	render: function() {
 		return (
-			React.createElement("ul", {}, this.props.items.map(i => React.createElement(AddressItem, i)))
+			React.createElement("ul", {}, this.props.items.map(i => React.createElement(InfoItem, i)))
 		);
 	}
 });
@@ -46,7 +45,7 @@ var MainPage = React.createClass({
 		return (
 			React.createElement("div", {},
 				React.createElement(NavMenu, {}),
-				React.createElement(AddressItems, {items: gitems}))
+				React.createElement(InfoItems, {items: gitems}))
 		);
 	}
 });
