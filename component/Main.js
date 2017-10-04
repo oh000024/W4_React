@@ -66,7 +66,7 @@ function setState(changes) {
 		break;
 	case "item":
 		component = ItemPage;
-		componentProperties = gitems.find(i => i.key == splittedUrl[1].split(":"));
+		componentProperties = gitems.find(i => i.key == splittedUrl[1]);
 		break;
 	default:
 		component = MainPage;
