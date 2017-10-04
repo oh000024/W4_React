@@ -24,8 +24,9 @@ var InfoItem = React.createClass({
 	render: function() {
 		return (
 			React.createElement("li", {},
-				React.createElement("a", {href:"#/item/:"+this.props.id, onCliked:this.props.onCliked}, this.props.name)
-			)
+			// React.createElement("a", {href:"#/item/:"+this.props.id, onClick:this.props.onCliked}, this.props.name)
+			React.createElement("a", {href:"#/item/:"+this.props.id}, this.props.name)
+		)
 		);
 	}
 });
