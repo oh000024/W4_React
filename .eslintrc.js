@@ -21,7 +21,8 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+		"no-unused-vars":0
     },
   	"globals": {
         "React": true,
@@ -33,6 +34,9 @@ module.exports = {
         "state":true,
 		"updateNewAddressItem":true,
 		"addNewItem":true,
-		"setState":true
+		"setState":true,
+		"updateNewItem":true,
+		"AddNewItemPage":true
+		
 	}
 };

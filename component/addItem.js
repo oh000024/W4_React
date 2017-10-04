@@ -13,7 +13,7 @@ let AddNewForm = React.createClass({
 	onEmailChange: function(e) {
 		this.props.onChange(Object.assign({}, this.props.newItem, {email: e.target.value}));
 	},
-	onSubmit: function(e) {
+	onSubmit: function() {
 		this.props.onSubmit(this.props.newItem);
 	},
 	render: function() {
