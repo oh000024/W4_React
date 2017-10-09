@@ -37,6 +37,5 @@ module.exports = {
 		"setState":true,
 		"updateNewItem":true,
 		"AddNewItemPage":true
-		
 	}
 };
